@@ -13,22 +13,29 @@ body{
 }
 
 .wrapper{
-    width: 940px;
+    width: 95%;
+    /* height: 800px; */
     margin: 20px auto 20px auto;
     border: 2px solid #000000;
     background-color: #ffffff;
 }
 
-/*header{
+header{
     height: 160px;
     background-image: url(../images/header.jpg);
 }
 
 h1{
-    text-indent: -9999px;
-    width: 940px;
+    text-indent: -999px;
+    width: 100%;
     height: 130px;
     margin: 0px;
+}
+footer p{
+    float: right;
+    /* clear: right; */ 
+    margin: 0;
+    /* position: relative; */
 }
 
 nav, footer{
@@ -36,16 +43,20 @@ nav, footer{
     color: #fff;
     background-color: #aeaca8;
     height: 30px;
+    /* float: right; */
 }
 
 nav ul{
     padding: 5px 0px 5px 30px;
     margin: 0px;
+    float: right;
 }
 
 nav li{
     display: inline;
     margin-right: 40px;
+    /* float: right; */
+    
 }
 
 nav li a{
@@ -56,16 +67,41 @@ nav li a:hover, nav li a.current{
     color: #000000;
 }
 
+nav li a:hover{
+    background-color: #efefef;
+}
+
 section.courses{
-    float: left;
-    width: 659px;
+    clear: right;
+    float: right;
+    width: 67%;
+    /* height: 100%; */
     border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    /* padding-left: 0; */
+    /* text-align: left; */
+    padding-right: 1em;
+    /* margin-left: 0; */
 }
 
 article{
-    clear: both;
-    overflow: auto;
+    /* clear: left; */
+    /* overflow: auto; */
     width: 100%;
+    /* border-left: 1px solid #eeeeee; */
+    /* height: 50%; */
+    /* display: block; */
+    /* padding-left: 0; */
+    float: left;
+    /* text-align: left; */
+    /* margin-left: 0; */
+}
+
+article hgroup, article p{
+/* width: 80%; */
+/* height: 25%; */
+/* border: 1px solid #161616; */
+text-align: center;
 }
 
 hgroup{
@@ -74,11 +110,14 @@ hgroup{
 
 figure{
     float: left;
-    width: 290px;
-    height: 220px;
-    padding: 5px;
+    /* width: 40%; */
+    /* height: 50%; */
+    padding-left: 0;
     margin: 20px;
     border: 1px solid #eeeeee;
+    text-align: left;
+    margin-left: 0;
+    /* clear: left; */
 }
 
 figcaption{
@@ -87,14 +126,19 @@ figcaption{
 }
 
 aside{
-    width: 230px;
-    float: left;
-    padding: 0px 0px 0px 20px;
+    /* width: 33%; */
+    /* float: left; */
+    padding: 0px 0px 0px 1em;
+    display: grid;
+}
+
+section.contact-details{
+/* clear: left; */
 }
 
 aside section a{
     display: block;
-    padding: 10px;
+    padding: 1em;
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -130,4 +174,4 @@ aside h2{
 footer{
     font-size: 80%;
     padding: 7px 0px 0px 20px;
-} */
+}
