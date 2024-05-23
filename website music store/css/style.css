@@ -66,6 +66,7 @@ html,body{
 
 .row{
     padding: 0 8px;
+    /* clear: both; */
 }
 
 .row:before{
@@ -118,21 +119,25 @@ html,body{
 
 .bar .bar-item{
     padding: 8px 16px;
-    float: left;
+    /* float: left; */
     width: auto;
     border: none;
-    display: block;
+    /* display: block; */
     outline: 0;
 }
 
 .button{
-    text-align: center;
+    /* text-align: center; */
     cursor: pointer;
-    vertical-align: middle;
+    /* vertical-align: middle; */
     text-decoration: none;
-    overflow: hidden;
+    /* overflow: hidden; */
     color: inherit;
     background-color: inherit;
+}
+
+.bar a:hover{
+    background-color: #000;
 }
 
 .black{
