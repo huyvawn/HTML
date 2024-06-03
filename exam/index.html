@@ -56,11 +56,12 @@
     </style>
 </head>
 <body>
+    <script src="validate.js"></script>
 <div class="wrapper">
     <h1>Multi Step Form Widgets</h1>
     <section class="main">
     <button>Profile</button>
-    <form action="/action_page.php" method="post">
+    <form action="/action_page.php" method="post" onsubmit="checkName('fname');return false;">
         <input type="text" class="text" id="fname" name="fname" placeholder="First Name" required><br>
         <input type="text" class="text" id="lname" name="lname" placeholder="Last Name" required><br>
         <input type="text" class="text" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{10}" required><br>
