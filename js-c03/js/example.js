@@ -35,7 +35,7 @@
         month=monthNames[weekFromToday.getMonth()];
         year = weekFromToday.getFullYear();
 
-        expiryMsg = 'Offer expires next';
+        expiryMsg = 'Offer expires next ';
         expiryMsg += day +'<br />(' +date + ' ' + month + ' ' + year+ ')';
         return expiryMsg;
     }
