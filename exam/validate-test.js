@@ -2,8 +2,8 @@ function checkName(eid1,eid2){
     var isCorrect = false;
     firstName = false;
     lastName = false;
-    firstName = /^[A-z ]+$/.test(document.getElementById(eid1).value);
-    lastName = /^[A-z ]+$/.test(document.getElementById(eid2).value);
+    firstName = /^[A-Za-z ]+$/.test(document.getElementById(eid1).value);
+    lastName = /^[A-Za-z ]+$/.test(document.getElementById(eid2).value);
     if(firstName == true && lastName == true)
         isCorrect = true;
     else
