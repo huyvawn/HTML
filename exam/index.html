@@ -6,10 +6,10 @@
     <title>Profile Form</title>
     <style>
         body{
-            background-color: #4646f7;
+            background-color: #30a7f7;
         }
         div.wrapper{
-            background-color:#4646f7 ;
+            background-color:#30a7f7 ;
             /* text-align: center; */
             padding: auto;
             padding-bottom: 30px;
@@ -23,19 +23,23 @@
             background-color: white;
             width: 70%;
             margin: auto;
+            position: relative;
+            top: 50px;
+            max-width: 600px;
+            height: 80vh;
             /* margin-bottom: 30px; */
         }
         button{
-            background-color: #4646f7;
+            background-color: #30a7f7;
             padding: 10px 8px;
             color: white;
             border: none;
-            margin: 30px 0 60px 30px;
+            margin: 60px 0 60px 30px;
         }
         input{
             /* width: 80%; */
-            padding: 5px 0 5px 5px;
-            margin: 0 0 20px 30px;
+            /* padding: 5px 0 5px 5px; */
+            /* margin: 0 0 20px 30px; */
         }
 
         p{
@@ -48,34 +52,49 @@
 
         .text{
             width: 80%;
+            padding: 5px 0 5px 5px;
+            margin: 0 0 30px 30px;
         }
 
         .submit-btn{
             color: white;
-            background-color: #4646f7;
+            background-color: #30a7f7;
             padding: 10px 8px;
             border: none;
+            margin: 0 0 20px 30px;
+        }
+        section.radiobtn{
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        div.maincontent{
+            position: relative;
+            /* top: 30px; */
         }
     </style>
 </head>
 <body>
-    <script src="validate.js"></script>
+    <script src="validate-test.js"></script>
 <div class="wrapper">
     <h1>Multi Step Form Widgets</h1>
     <section class="main">
+        <div class="maincontent">
     <button>Profile</button>
-    <form action="/action_page.php" method="post" onsubmit="checkName('fname');return false;">
+    <form action="/action_page.php" method="post" onsubmit="checkName('fname','lname');return false;">
         <input type="text" class="text" id="fname" name="fname" placeholder="First Name" required><br>
         <input type="text" class="text" id="lname" name="lname" placeholder="Last Name" required><br>
-        <input type="text" class="text" id="phone" name="phone" placeholder="Phone" pattern="[0-9]{10}" required><br>
-        <p>Gender:</p>
+        <input type="text" class="text" id="phone" name="phone" placeholder="Phone (10 numbers)" pattern="[0-9]{10}" required><br>
+            <section class="radiobtn"> 
+                Gender:
         <input type="radio" id="female" name="Gender" value="Female" checked="checked">
         <label for="female">Female</label>
         <input type="radio" id="male" name="Gender" value="Male">
         <label for="male">Male</label><br>
+            </section>
         <textarea name="address" class="text" id="address" required placeholder="Address"></textarea><br>
         <input type="submit" value="Next" class="submit-btn">
     </form>
+        </div>
     </section>
 </div>
 </body>
