@@ -1,0 +1,20 @@
+.row#row1{
+    width: 90%;
+margin: auto;    
+}
+
+button.carousel-control-prev{
+    /* position: relative; */
+    /* left: 0; */
+    background-color: black;
+    color: black;
+    text-align: left;
+}
+.carousel-control-prev-icon{
+    color: black;
+    background-color: black;
+    position: relative;
+    left: 0;
+    margin-left: 0;
+    padding-left: 0;
+}
