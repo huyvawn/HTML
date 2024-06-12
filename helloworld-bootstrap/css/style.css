@@ -6,7 +6,7 @@ max-height: 200px;
 
 #carouselProduct button.carousel-control-prev, #carouselProduct .carousel-control-next{
     background-color: black;
-    width: 10%;
+    width: 6%;
 }
 
 #carouselProduct .carousel-control-prev{
