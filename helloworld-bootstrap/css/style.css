@@ -1,3 +1,7 @@
+body{
+    overflow: hidden;
+}
+
 #carouselProduct.carousel.slide .row{
     width: 90%;
 margin: auto;
